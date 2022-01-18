@@ -1,0 +1,19 @@
+.change {
+  color: lightblue;
+  font: size 100px;
+  border: 10px solid black;
+}
+
+#drop_zone {
+  border: 5px solid blue;
+  width: 200px;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: #6c757d;
+}

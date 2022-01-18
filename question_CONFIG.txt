@@ -1,0 +1,50 @@
+%time,lasttime,lat,lng,speed,course,altitude,Temperature (C),Pressure (Pa),Ascent Rate (M/Sec)%
+<Temperature Change>{
+[altitude,Temperature (C)]
+[Temperature (C),speed]
+[Temperature (C),time]
+}
+<Pressure Change>{
+[altitude,Pressure (Pa)]
+[Pressure (Pa),time]
+[Pressure (Pa),Temperature (C)]
+}
+<Time of Day>{
+[altitude,Temperature (C)]
+[altitude,Pressure (Pa)]
+[altitude,time]
+[Temperature (C),time]
+[Pressure (Pa),time]
+[speed,time]
+}
+<Distance Traveled>{
+[altitude,time]
+[altitude,speed]
+[lat,time]
+[lng,time]
+[lat,lng]
+}
+<Jet Stream>{
+[altitude,speed]
+}
+<Clouds>{
+[altitude,time]
+[Pressure (Pa),time]
+}
+<Tropopause>{
+[altitude,Temperature (C)]
+}
+<Pollutants>{
+[altitude,speed]
+}
+<Ascent Rate>{
+[Ascent Rate (M/Sec),time]
+[altitude,Ascent Rate (M/Sec)]
+[Ascent Rate (M/Sec),Temperature (C)]
+[Ascent Rate (M/Sec),Pressure (Pa)]
+}
+<Wind Shear>{
+[altitude,speed]
+[course,time]
+[altitude,course]
+}

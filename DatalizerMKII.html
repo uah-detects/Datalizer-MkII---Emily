@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./DatalizerMKII.html"/>
+    <script src="scripts/js/jquery-3.6.0.min.js"></script>
+    <script src="scripts/js/plotly.min.js"></script>
+    <link rel="stylesheet" href="scripts/css/bootstrap.min.css">
+    <script src='scripts/js/bootstrap.bundle.min.js'></script>
+    <link rel="stylesheet" href="scripts/css/DatalizerMKII_Style.css">
+    <link rel="icon" href="images/DETECTSfavicon.ico">
+
+    <title>DETECTS Datalizer MKII</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Avatar Logo" style="width:100px;" class="rounded-end"> 
+        <h1 class="title" style="display: inline;vertical-align:text-Top;" >DETECTS Datalizer MKII</h1>
+      </a>
+    </div>
+  </nav>
+  
+  <div class="text-white">
+
+    <div class="menuContainer  p-5 my-5 ">
+
+    <label for="CONFIG_FILE">Select a Configuration File:</label>
+    <br>
+    <input type="file" id="CONFIG_FILE" />
+    <pre id="CONFfile-content"></pre>
+
+    <label for="file-input">Select a CSV File:</label>
+    <br>
+    <input type="file" id="file-input" />
+    <pre id="file-content"></pre>
+
+    <select id="selectX">
+      <option>Choose an X</option>
+    </select>
+
+    <select id="selectY">
+      <option>Choose a Y</option>
+    </select>
+    <input type = "button" onclick = "plotGraph()" value = "Plot">
+    <br>
+    <br>
+    <select id="selectScienceQuestion">
+      <option>Choose a Science Question</option>
+    </select>
+    <input type = "button" onclick = "plotScienceQuestion()" value = "Plot Science Question"> 
+    <br>
+    <br>
+    <input type = "button" onclick = "clearGraphs()" value = "Clear">
+
+    <select id="imageFileType">
+      <option selected="selected">png</option>
+      <option>jpeg</option>
+    </select>
+
+      <button id="btnExport" type="button" text="Export" > Export to Images </button>
+    </div>
+  </div>
+
+
+  <div class="container" >
+    <div class='element' id='div_1'></div>
+      <div id="txt_1" style="width:1200px;height:500px;"></div>
+  </div>
+
+
+
+</body>
+<script src="scripts/js/DatalizerMKII_JS.js"></script>
+</html>
